@@ -3,12 +3,8 @@
  * file located in the root directory of this source tree.
  */
 
- #ifndef MISC_H_
- #define MISC_H_
- 
-#ifdef __cplusplus
-extern "C" {
-#endif
+#ifndef MISC_H_
+#define MISC_H_
  
 #ifndef NULL
 #define NULL 0
@@ -47,9 +43,5 @@ extern "C" {
 )
  
 #define BASE2_SCALE(value, src_width, dest_width) ((value) << ((dest_width) - (src_width)) | ((value) >> (src_width) - (((dest_width)) - ((src_width)))))
-
-#ifdef __cplusplus
-}
-#endif
 
 #endif // MISC_H_
